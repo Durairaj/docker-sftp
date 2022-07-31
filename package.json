@@ -1,0 +1,23 @@
+{
+  "name": "docker-sftp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Durairaj/docker-sftp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Durairaj/docker-sftp/issues"
+  },
+  "homepage": "https://github.com/Durairaj/docker-sftp#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "ssh2-sftp-client": "^9.0.2"
+  }
+}

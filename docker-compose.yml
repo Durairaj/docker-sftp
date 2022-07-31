@@ -1,0 +1,16 @@
+version: "3.0"
+services:
+    sftp:
+        image: atmoz/sftp
+        ports:
+            - "9922:22"
+        volumes:
+            - ./users.conf:/etc/sftp/users.conf:ro
+            - ./init.sh:/etc/sftp.d/init.sh:ro
+            - ./files:/home/foo/share
+        networks:
+          - turreta_network     
+
+networks:
+  turreta_network:
+    driver: bridge
